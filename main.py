@@ -73,14 +73,12 @@ async def create_checkout_session(request: Request):
 
     # escolhe a URL de sucesso de acordo com o produto
     if price_id in (
-        'price_1S4ThvEn1uVju5MM20P4B3F8',
-        'price_1S5XwkEn1uVju5MMDd2LDijV',
-        'price_1S5XyXEn1uVju5MMSuJwuGkc',
-        'price_1S4TiDEn1uVju5MMIsslYoPx'
+        'price_1S6eVdEn1uVju5MMBIHounGM',
+        'price_1S6eVqEn1uVju5MMVjiyAaER'
     ):
-        success_url = add_sid('https://learnmoredigitalcourse.com/recovery-audizen-stripe2-21')
+        success_url = add_sid('https://learnmoredigitalcourse.com/iron-members-area')
     else:
-        success_url = add_sid('https://learnmoredigitalcourse.com/audizen_stripe2_19')
+        success_url = add_sid('https://learnmoredigitalcourse.com/iron-stripe-9')
 
     session = stripe.checkout.Session.create(
         payment_method_types=['card'],
@@ -396,7 +394,7 @@ async def stripe_webhook(request: Request):
             footer_text = (
                 "Thank you for purchasing the formula. To access the material, "
                 "simply click on the link and follow the instructions: "
-                "https://learnmoredigitalcourse.com/members-area-audizen/\n\n"
+                "https://learnmoredigitalcourse.com/iron-members-area/\n\n"
                 "If you have any questions, please send an email to: "
                 "digital.solutions.ooh@gmail.com"
             )
