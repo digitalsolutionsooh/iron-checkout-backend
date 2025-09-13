@@ -76,7 +76,7 @@ async def create_checkout_session(request: Request):
         'price_1S6eVdEn1uVju5MMBIHounGM',
         'price_1S6eVqEn1uVju5MMVjiyAaER'
     ):
-        success_url = add_sid('https://learnmoredigitalcourse.com/iron-members-area')
+        success_url = add_sid('https://learnmoredigitalcourse.com/iron-stripe-up1')
     else:
         success_url = add_sid('https://learnmoredigitalcourse.com/iron-stripe-9')
 
