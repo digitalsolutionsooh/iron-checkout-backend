@@ -74,6 +74,7 @@ async def create_checkout_session(request: Request):
     # escolhe a URL de sucesso de acordo com o produto
     if price_id in (
         'price_1S6eVdEn1uVju5MMBIHounGM',
+        'price_1S7n5AEn1uVju5MMT9KIq5KO',
         'price_1S6eVqEn1uVju5MMVjiyAaER'
     ):
         success_url = add_sid('https://learnmoredigitalcourse.com/iron-stripe-up1')
